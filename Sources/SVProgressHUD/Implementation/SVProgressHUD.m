@@ -419,7 +419,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         //NSBundle *bundle = [NSBundle mainBundle];
       NSLog(@"Hussain: %@", bundle);
         NSURL *url = [bundle URLForResource:@"Assets" withExtension:@""];
-        NSBundle *imageBundle = [NSBundle bundleWithURL:url];
+        NSBundle *imageBundle = SWIFTPM_MODULE_BUNDLE;
       NSLog(@"Azfar: %@", imageBundle);
         
         _infoImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"info" ofType:@"png"]];
