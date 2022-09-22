@@ -415,12 +415,10 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         _imageViewSize = CGSizeMake(28.0f, 28.0f);
         _shouldTintImages = YES;
         
-        NSBundle *bundle = SWIFTPM_MODULE_BUNDLE;
+        //NSBundle *bundle = SWIFTPM_MODULE_BUNDLE;
         //NSBundle *bundle = [NSBundle mainBundle];
-        NSLog(@"Hussain: %@", bundle);
-        NSURL *url = [bundle URLForResource:@"Assets" withExtension:@""];
+        //NSURL *url = [bundle URLForResource:@"Assets" withExtension:@""];
         NSBundle *imageBundle = SWIFTPM_MODULE_BUNDLE;
-        NSLog(@"Azfar: %@", imageBundle);
         
         _infoImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"info" ofType:@"png"]];
         _successImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"success" ofType:@"png"]];

@@ -61,8 +61,7 @@
         CALayer *maskLayer = [CALayer layer];
         
         //NSBundle *bundle = [NSBundle bundleForClass:[SVProgressHUD class]];
-        NSBundle *bundle = [NSBundle mainBundle];
-        NSURL *url = [bundle URLForResource:@"Assets" withExtension:@""];
+        //NSURL *url = [bundle URLForResource:@"Assets" withExtension:@""];
         NSBundle *imageBundle = SWIFTPM_MODULE_BUNDLE;
       
         
