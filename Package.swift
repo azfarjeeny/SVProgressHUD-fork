@@ -13,7 +13,7 @@ let package = Package(
         .target(
             name: "SVProgressHUD",
             path: "Sources/SVProgressHUD",
-            resources: [.copy("Resources")],
+            resources: [.copy("Assets")],
             publicHeadersPath: "Headers"
         )
     ]
