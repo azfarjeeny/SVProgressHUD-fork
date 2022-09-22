@@ -63,7 +63,7 @@
         //NSBundle *bundle = [NSBundle bundleForClass:[SVProgressHUD class]];
         NSBundle *bundle = [NSBundle mainBundle];
         NSURL *url = [bundle URLForResource:@"Assets" withExtension:@""];
-        NSBundle *imageBundle = [NSBundle mainBundle];
+        NSBundle *imageBundle = SWIFTPM_MODULE_BUNDLE;
       
         
         NSString *path = [imageBundle pathForResource:@"angle-mask" ofType:@"png"];
