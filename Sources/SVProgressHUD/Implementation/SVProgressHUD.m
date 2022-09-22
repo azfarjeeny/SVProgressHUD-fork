@@ -418,7 +418,8 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         //NSBundle *bundle = [NSBundle bundleForClass:[SVProgressHUD class]];
         NSBundle *bundle = [NSBundle mainBundle];
         NSURL *url = [bundle URLForResource:@"Assets" withExtension:@""];
-        NSBundle *imageBundle = [NSBundle bundleWithURL:url];
+        NSBundle *imageBundle = [NSBundle mainBundle];
+      NSLog(@"Azfar: %@", imageBundle);
         
         _infoImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"info" ofType:@"png"]];
         _successImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"success" ofType:@"png"]];

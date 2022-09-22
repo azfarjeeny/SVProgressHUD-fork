@@ -63,7 +63,8 @@
         //NSBundle *bundle = [NSBundle bundleForClass:[SVProgressHUD class]];
         NSBundle *bundle = [NSBundle mainBundle];
         NSURL *url = [bundle URLForResource:@"Assets" withExtension:@""];
-        NSBundle *imageBundle = [NSBundle bundleWithURL:url];
+        NSBundle *imageBundle = [NSBundle mainBundle];
+      
         
         NSString *path = [imageBundle pathForResource:@"angle-mask" ofType:@"png"];
         
